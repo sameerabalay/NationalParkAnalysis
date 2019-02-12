@@ -6,8 +6,11 @@ Sources of data:
 
 WorkFlow:
 https://irma.nps.gov/Stats/SSRSReports/National%20Reports/Annual%20Park%20Ranking%20Report%20(1979%20-%20Last%20Calendar%20Year) - Reports in csv format
+
 https://www.nps.gov/state/ca/index.htm - National sites in the state
+
 https://www.infoplease.com/state-abbreviations-and-state-postal-codes - Postal Code data
+
 
 Multiple reports are available for the national parks data for the last 20 years. The reports did not have location of the parks like State. 
 https://irma.nps.gov/Stats/SSRSReports/National%20Reports/Annual%20Park%20Ranking%20Report%20(1979%20-%20Last%20Calendar%20Year)
@@ -37,10 +40,10 @@ Alcatraz Island offers a close-up look at the site of the first lighthouse and U
  
 Since I was scarping the nps.gov for park name. As the data of interest here is name of the national site to get the geographical location I decided to store the information in this format in mongodb
  
- parkname:<name of the park>
- state:<state where the park is located>
- city:<city of the park location>
- type:<type of park>
- description:<description of the park>
+ parkname:name of the park
+ state:state where the park is located
+ city:city of the park location
+ type:type of park. Possible values:National Monument,National Park,National Historic Site, National Recreation Area
+ description:description of the park
 
  
