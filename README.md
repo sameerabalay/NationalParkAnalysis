@@ -47,5 +47,26 @@ Since I was scarping the nps.gov for park name. As the data of interest here is 
  city:city of the park location
  type:type of park. Possible values:National Monument,National Park,National Historic Site, National Recreation Area
  description:description of the park
+ 
+ ****
+ I had to manually download the data in xslx format as the csv format was not user friendly. The download had to be done twice because I report was only available for 20 years but the data available was from 1979 to 2017.
+ 
+ I had to do some data cleaning like renaming column names since the data I downloaded had multiple categories like:
+ (Recreational Visits, Non Recreational Visits, ..) for all years so the strategy I used was to append the cateogory to the year so all the categories data can be read on one shot from a single xslx file
+ 
+ The data was read from 2 xslx files and the data was merged and some columns like 'Average_1998_2017_Recreational_Visits', 'Average_1979_1997_Recreational_Visits' were dropped. 
+ 
+ The data was not formatted correctly so I decided to go through some transformations and doing pivot table. I'm sure there is a easier way to do this.
+ 
+ Given I was interested in the top national parks. I decided to take the following parks since they had the most visitors since 1979:
+ 1. Great Smoky Mountains NP
+ 2. Grand Canyon NP
+ 3. Zion NP
+ 4. Rocky Mountain NP
+ 5. Yosemite NP
+ 6. Yellowstone NP
+ 
+ After initial analysis a line chart with the recreational visits of the top 6 parks for created and saved as src/recreational_visits.html
+ 
 
  
