@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.stats as stats
 
 
 parks = ['Zion','Grand Canyon','Yellow Stone', 'Yosemite','Rocky Mountain']
@@ -54,4 +55,28 @@ print(chi_square_statistic_tent)
 
 print("Chi Square Statistic Backcountry")
 print(chi_square_statistic_backcountry)
+
+crit = stats.chi2.ppf(q = 0.95, # Find the critical value for 95% confidence*
+                      df = 4)   # Df = number of variable categories - 1
+
+print("Critical value")
+print(crit)
+
+p_value_tent = 1 - stats.chi2.cdf(x=chi_square_statistic_tent,  df=4)
+print("P value tent: {}".format(p_value_tent))
+
+p_value_backcountry = 1 - stats.chi2.cdf(x=chi_square_statistic_backcountry,  df=4)
+print("P value backcountry: {}".format(p_value_backcountry))
+
+obs = np.array([[115902,154876,89504,498389,101125], [35947,291984,41694,165206,37470]])
+
+ 
+
+
+g, p, dof, expctd = stats.chi2_contingency(obs)
+print("Test Statistic : {}".format(g))
+print("P-value of th test : {}".format(p))
+print("Degrees of Freedom : {}".format(dof))
+print("Expected Frequencies: ")
+print(expctd)
 
