@@ -22,6 +22,13 @@ def find_parks_list(soup):
     return soup.findAll(id_="list_parks")
 
 def get_mongo_collection(database_name, collection_name):
+    '''
+    Helper function to get mongo collection
+    INPUT:
+        - database name, string of database name
+        - collection name, string of collection name
+    OUTPUT: soup result set
+    '''
     # Save to mongodb the information from the web.
     # Store both the whole url and the div components
 
@@ -30,18 +37,7 @@ def get_mongo_collection(database_name, collection_name):
     collection = database[collection_name]
     return collection
 
-'''
 
-db.post.insert([
-   {
-      title: 'MongoDB Overview', 
-      description: 'MongoDB is no sql database',
-      by: 'tutorials point',
-      url: 'http://www.tutorialspoint.com',
-      tags: ['mongodb', 'database', 'NoSQL'],
-      likes: 100
-   }
-'''
 
 """ # Replace the ca with all the state codes
 nps_state_parks_url = 'https://www.nps.gov/state/ca/index.htm'
@@ -68,6 +64,12 @@ Alcatraz Island offers a close-up look at the site of the first lighthouse and U
 
 def get_information(park, state_code):
     '''
+    helper function for parsing the park div tag and returning the data in dictionary format to insert in mongoDB
+    INPUT:
+        - park, html div tag information for the park
+        - state_code, string of state code to look for
+    OUTPUT: park data dictionary
+
     This will take the div tag of the park and return a key value pairs for the items I want to store.
       h2 tag had the type of the national site. Eg: National Monument,National Park,National Historic Site, National Recreation Area
      h3 tag had the name of the national site
@@ -115,6 +117,14 @@ def get_information(park, state_code):
     
 
 def pipeline_to_insert_data(state_codes_list):
+    '''
+    Helper method that goes through a list of state codes and call the BeautifulSoup 
+    and get the raw html and the parsed html and creates a dictionary to insert
+    the data into MongoDB
+    INPUT:
+        - state_codes_list, list of state codes in string format
+    OUTPUT: mongoDB dictionary to insert
+    '''
     nps_parks_data_to_insert_list = []
 
     for i in range(0,len(state_codes_list)):
