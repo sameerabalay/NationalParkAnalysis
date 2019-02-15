@@ -41,7 +41,7 @@ https://www.infoplease.com/state-abbreviations-and-state-postal-codes - Postal C
 ### Data Engineering Highlights:
 * Reports - After initial analysis the best format to download the reports was in excel format. The column names were manipulated so all the data for different categories can be loaded at one time. The data had to be downloaded as two excel files because of the max limit of 20years.
 * Park Information - National Park Service website was web-scrapped using BeautifulSourp to get all parks located in all the states and provinces of United States and stored in MongoDB
-* Data Storage - On further analysis I found that even though the report data and park names came from National Park Service the names of the parks are different in each system as the source of information is different. For example: Report has 'Yosemite NP' where as website has it as 'Yosemite' so I decided it might be best to store all the information in a Postgres database and do further mapping to do future analysis.
+* Data Storage - On further analysis I found that even though the report data and park names came from National Park Service the names of the parks are different in each system as the source of information is different. For example: Report has 'Yosemite NP' where as website has it as 'Yosemite' so I decided it might be best to store all the information in a Postgres database and do further mapping for future analysis.
 
 ### Scope of the Initial Study
 After intial analysis I decided to study camping preferences in the top 6 national parks. 
@@ -64,16 +64,19 @@ Test Details
 
 #### Results
 Recreational Visits of top 6 national parks
+
 <img src="output/Recreational_Visits.png"
      alt="Recreational Visits"
      style="float: left; margin-right: 10px;" />
      
 Camping Counts of top 6 national parks    
+
  <img src="output/Camping_Counts.png"
      alt="Camping Counts"
      style="float: left; margin-right: 10px;" />
      
 Test Conclusion
+
  <img src="output/Test_Conclusions.png"
      alt="Test Conclusion"
      style="float: left; margin-right: 10px;" />
@@ -81,13 +84,13 @@ Test Conclusion
 
 ## Future Work
 * Merge the report data and the scrapped web data into a Postgres database.
-* Refactor the report data into a separate class and write functions
-* Run analysis on proximity of the park to a big city and the visitor count to the park
-* Integrate with Instagram api to get the most popular parks
+* Refactor the report data into a separate class and write functions.
+* Run analysis on proximity of the park to a big city and the visitor count to the park by getting GPS data for the parks and closest big cities
+* Integrate with Instagram api to get the most popular parks to current popular parks.
 * Predict best time to visit a park on your personal preferences. (like - tent camping, back country camping, non-popular times etc.,)
 
 
 ## Acknowledgements
-* To all the people in the open-source community who open heartedly built all the wonderful software and tools for the global community to use. To all the members of the online community who have spent their time answering and explaining all the concepts so it is easier for learners like me.
+* To all the people in the open-source community who open heartedly write wonderful software and tools for global use. To all the members of the online community who have spent their precious time answering and explaining all the concepts so it is easier for future learners like me.
 
  
