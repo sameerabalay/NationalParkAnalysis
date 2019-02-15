@@ -38,7 +38,7 @@ https://www.infoplease.com/state-abbreviations-and-state-postal-codes - Postal C
 ### Data Engineering Highlights:
 * Reports - After initial analysis the best format to download the reports was in excel format. The column names were manipulated so all the data for different categories can be loaded at one time. The data had to be downloaded as two excel files because of the max limit of 20years.
 * Park Information - National Park Service website was web-scrapped using BeautifulSourp to get all parks located in all the states and provinces of United States and stored in MongoDB
-* Data Storage - 
+* Data Storage - On further analysis I found that even though the report data and park names came from National Park Service the names of the park names are different in each system as the source of information is different. For example: Report has it as 'Yosemite NP' where as website has it as 'Yosemite' so I decided it might be best to store all the information in a Postgres database to do future analysis.
 
 ### Scope of the Initial Study
 After intial analysis I decided to study camping preferences in the top 6 national parks. 
@@ -77,7 +77,8 @@ Test Conclusion
 
 
 ## Future Work
-* Merge the report data and the web scrapped into a Postgres database.
+* Merge the report data and the scrapped web data into a Postgres database.
+* Refactor the report data into a separate class and write functions
 * Run analysis on proximity of the park to a big city and the visitor count to the park
 * Integrate with Instagram api to get the most popular parks
 * Predict best time to visit a park on your personal preferences. (like - tent camping, back country camping, non-popular times etc.,)
