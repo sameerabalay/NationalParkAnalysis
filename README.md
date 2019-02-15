@@ -25,13 +25,16 @@ The purpose of this project is to analyze the National Park Service visitor data
 * BeautifulSoup
 
 ### Sources of data
-Reports Data available from 1979 - 2017
+* Reports Data available from 1979 - 2017
+
 https://irma.nps.gov/Stats/SSRSReports/National%20Reports/Annual%20Visitation%20By%20Park%20(1979%20-%20Last%20Calendar%20Year)- Reports 
 
-Park Information 
+* Park Information 
+
 https://www.nps.gov/state/ca/index.htm - Retrieve the park details like park type, name, location etc.,
 
-Postal Code Information
+* Postal Code Information
+
 https://www.infoplease.com/state-abbreviations-and-state-postal-codes - Postal Code data to get the state codes to retrieve the park data for each state
 
 
