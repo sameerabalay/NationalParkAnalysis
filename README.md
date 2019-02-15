@@ -96,4 +96,12 @@ Camping_categories - ('tent', 'backcountry')
 
 ###### Since $\chi^2 > \chi^2_{(degrees of freedom, 1-\alpha)}$ we reject the null hypothesis - People who like to do tent vs backcountry camping have no preference for a specific park/parks
 
+<img src="output/Camping_Counts.png"
+     alt="Camping Counts"
+     style="float: left; margin-right: 10px;" />
+
+<img src="output/Recreational_Visits.png"
+     alt="Recreational Visits"
+     style="float: left; margin-right: 10px;" />
+
  
