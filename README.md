@@ -1,6 +1,4 @@
-# NationalParkAnalysis  
-  
-# Project Name
+# NationalParkAnalysis 
 National Park Service Visitor Data Analysis.
 
 “Look deep into nature and then you will understand everything better.” - Albert Einstein
