@@ -48,7 +48,7 @@ Recreational Visits of top 6 national parks
      alt="Recreational Visits"
      style="float: left; margin-right: 10px;" />
      
-Camping Counts of top 6 national parks    
+Camping Counts of top 6 national parks
 
  <img src="output/Camping_Counts.png"
      alt="Camping Counts"
@@ -72,7 +72,7 @@ After exploratory analysis I decided to study camping preferences in the top 6 n
 #### Test
 Test Details
  <img src="output/Test_Information.png"
-     alt="Test Information"
+     alt="Test Informations"
      style="float: left; margin-right: 10px;" />
 
 #### Results
@@ -80,7 +80,7 @@ Test Details
 Test Conclusion
 
  <img src="output/Test_Conclusions.png"
-     alt="Test Conclusion"
+     alt="Test Conclusions"
      style="float: left; margin-right: 10px;" />
 
 
