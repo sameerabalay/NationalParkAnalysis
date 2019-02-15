@@ -155,21 +155,32 @@ After intial analysis I decided to study camping preferences in the top 6 nation
  5. Yosemite NP
  6. Yellowstone NP
  
- 
-
-
 
 #### Methods Used
 * Chi Square Testing
 
-#### Results
-<img src="output/Camping_Counts.png"
-     alt="Camping Counts"
+#### Test
+Test Details
+ <img src="output/Test_Information.png"
+     alt="Test Information"
      style="float: left; margin-right: 10px;" />
 
+#### Results
+Recreational Visits of top 6 national parks
 <img src="output/Recreational_Visits.png"
      alt="Recreational Visits"
      style="float: left; margin-right: 10px;" />
+     
+Camping Counts of top 6 national parks    
+ <img src="output/Camping_Counts.png"
+     alt="Camping Counts"
+     style="float: left; margin-right: 10px;" />
+     
+Test Conclusion
+ <img src="output/Test_Conclusion.png"
+     alt="Test Conclusion"
+     style="float: left; margin-right: 10px;" />
+
 
 ### Future Work
 
