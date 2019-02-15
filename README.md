@@ -68,5 +68,32 @@ Since I was scarping the nps.gov for park name. As the data of interest here is 
  
  After initial analysis a line chart with the recreational visits of the top 6 parks for created and saved as src/recreational_visits.html
  
+#### Reviewing the data I decided to do Chi-Squared Test
+
+#### Null Hypothesis: People who like to do tent vs backcountry camping have no preference for a specific park/parks
+
+#### Alternate Hypothesis: People who like tent vs backcountry camping have preference for a specific park/parks
+
+#### Test Statistic
+$\chi^2 = \sum_{\forall i,j} \frac{(Observed_{ij}-Expected_{ij})^2}{Expected_{ij}}$
+
+#### For a level $\alpha$ test, reject Null Hypothesis if $\chi^2 > \chi^2_{(degrees of freedom, 1-\alpha)}$ and accept Null Hypothesis if $\chi^2 <= \chi^2_{(degrees of freedom, 1-\alpha)}$
+
+##### Test Criteria
+Do not use test if any expected values are less than 1 or if more than 1/5 of them are less than 5
+
+##### Conclusions:
+
+Parks - ('Zion','Grand Canyon','Yellow Stone', 'Yosemite','Rocky Mountain', 'Smoky Mountain')
+
+Camping_categories - ('tent', 'backcountry')
+
+###### The calculated $\chi^2 = 203937.53 $   
+
+###### For 5 degrees of freedom and $\alpha$ = 0.05 (i.e., (1-$\alpha$) = 0.95 ) the  $\chi^2_{(degrees of freedom, 1-\alpha)}$ = 11.070
+(Reference: https://www.itl.nist.gov/div898/handbook/eda/section3/eda3674.htm)
+
+
+###### Since $\chi^2 > \chi^2_{(degrees of freedom, 1-\alpha)}$ we reject the null hypothesis - People who like to do tent vs backcountry camping have no preference for a specific park/parks
 
  
