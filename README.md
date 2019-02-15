@@ -108,7 +108,7 @@ National Park Service Visitor Data Analysis.
 
 “Look deep into nature and then you will understand everything better.” - Albert Einstein
 
-## Project Intro/Objective
+## Project Objective
 The purpose of this project is to analyze the National Park Service visitor data from 1979-2017 and look for trends and similiarities of the different parks by multiple criteria like camping preferences, location etc., The bigger goal is to build a personal park recommender which best fits your preferences - Proximity, Camping Preferences etc., 
 
 
@@ -177,14 +177,14 @@ Camping Counts of top 6 national parks
      style="float: left; margin-right: 10px;" />
      
 Test Conclusion
- <img src="output/Test_Conclusion.png"
+ <img src="output/Test_Conclusions.png"
      alt="Test Conclusion"
      style="float: left; margin-right: 10px;" />
 
 
-### Future Work
+## Future Work
 
 ## Acknowledgements
-* To all the people in the open-source community who built all the tools for me to use. To all the members of the online community who have spent their time answering and explaining all the concepts so it is easier for people like me to retrieve information.
+* To all the people in the open-source community who open heartedly built all the wonderful software and tools for the global community to use. To all the members of the online community who have spent their time answering and explaining all the concepts so it is easier for learners like me.
 
  
