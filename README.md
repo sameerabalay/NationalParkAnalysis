@@ -38,11 +38,26 @@ https://www.infoplease.com/state-abbreviations-and-state-postal-codes - Postal C
 
 ### Data Engineering Highlights:
 * Reports - After initial analysis the best format to download the reports was in excel format. The column names were manipulated so all the data for different categories can be loaded at one time. The data had to be downloaded as two excel files because of the max limit of 20years.
-* Park Information - National Park Service website was web-scrapped using BeautifulSourp to get all parks located in all the states and provinces of United States and stored in MongoDB
+* Park Information - National Park Service website was web-scrapped using BeautifulSoup to get all parks located in all the states and provinces of United States and stored in MongoDB
 * Data Storage - On further analysis I found that even though the report data and park names came from National Park Service the names of the parks are different in each system as the source of information is different. For example: Report has 'Yosemite NP' where as website has it as 'Yosemite' so I decided it might be best to store all the information in a Postgres database and do further mapping for future analysis.
 
+### Exploratory Analysis
+Recreational Visits of top 6 national parks
+
+<img src="output/Recreational_Visits.png"
+     alt="Recreational Visits"
+     style="float: left; margin-right: 10px;" />
+     
+Camping Counts of top 6 national parks    
+
+ <img src="output/Camping_Counts.png"
+     alt="Camping Counts"
+     style="float: left; margin-right: 10px;" />
+     
+
+
 ### Scope of the Initial Study
-After intial analysis I decided to study camping preferences in the top 6 national parks. 
+After exploratory analysis I decided to study camping preferences in the top 6 national parks. 
  1. Great Smoky Mountains NP
  2. Grand Canyon NP
  3. Zion NP
@@ -61,18 +76,7 @@ Test Details
      style="float: left; margin-right: 10px;" />
 
 #### Results
-Recreational Visits of top 6 national parks
 
-<img src="output/Recreational_Visits.png"
-     alt="Recreational Visits"
-     style="float: left; margin-right: 10px;" />
-     
-Camping Counts of top 6 national parks    
-
- <img src="output/Camping_Counts.png"
-     alt="Camping Counts"
-     style="float: left; margin-right: 10px;" />
-     
 Test Conclusion
 
  <img src="output/Test_Conclusions.png"
