@@ -3,7 +3,7 @@
 “Look deep into nature and then you will understand everything better.” - Albert Einstein
 
 The purpose of this project is to analyze the National Park Service visitor data from 1979-2017 and look for trends and similiarities of the different parks by multiple criteria like camping preferences, location etc., The bigger goal is to build a personal park recommender which best fits your preferences - Proximity, Camping Preferences etc., 
-
+ 
 
 ## Project Description
 
